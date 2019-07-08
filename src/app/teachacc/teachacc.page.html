@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar color = "tertiary">
+        
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/acctype"></ion-back-button>
+          </ion-buttons>
+      <ion-title>SET YOUR USERNAME  <br> AND PASSWORD</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item> 
+          <ion-label position="floating">USERNAME</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+   
+        <ion-item>
+          <ion-label position="floating">PASSWORD</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">CONFIRM PASSWORD</ion-label>
+          <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+        </ion-item>
+       </ion-list>
+
+       <div id="cool-button-div-right">
+         <ion-button shape="round" (click)=register()>OK</ion-button>
+       </div>
+
+
+</ion-content>

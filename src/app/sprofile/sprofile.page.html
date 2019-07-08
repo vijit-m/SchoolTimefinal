@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-toolbar color = "tertiary">
+        
+       
+      <ion-title>SETTING UP YOUR PROFILE</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item> 
+          <ion-label position="floating">NAME OF STUDENT</ion-label>
+          <ion-input type="text" [(ngModel)]="nameofstud"></ion-input>
+        </ion-item>
+
+        <ion-item> 
+            <ion-label position="floating">NAME OF PARENT</ion-label>
+            <ion-input type="text" [(ngModel)]="nameofpar"></ion-input>
+          </ion-item>
+
+          <ion-item> 
+              <ion-label position="floating">ROLE</ion-label>
+              <ion-input type="text" placeholder="mother/father/guardian" [(ngModel)]="role"></ion-input>
+            </ion-item>
+   
+        <ion-item>
+          <ion-label position="floating">GENDER OF STUDENT</ion-label>
+          <ion-input type="text" [(ngModel)]="gender"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">CLASSNAME</ion-label>
+          <ion-input type="text" [(ngModel)]="classname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">ROLL NUMBER</ion-label>
+            <ion-input type="number" [(ngModel)]="rollno"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="floating">SCHOOL/ORGANISATION</ion-label>
+              <ion-input type="text" [(ngModel)]="school"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">PERSONAL CONTACT NUMBER</ion-label>
+                <ion-input type="number" [(ngModel)]="contact"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label position="floating">EMERGENCY CONTACT NUMBER</ion-label>
+                  <ion-input type="number" [(ngModel)]="emcontact"></ion-input>
+                </ion-item>
+
+
+                    <ion-item>
+                        <ion-label position="floating">HOBBIES</ion-label>
+                        <ion-input type="text" [(ngModel)]="hobbies"></ion-input>
+                      </ion-item>
+
+                      <ion-item>
+                          <ion-label position="floating">MEDICAL CONDITIONS</ion-label>
+                          <ion-input type="text" [(ngModel)]="medical"></ion-input>
+                        </ion-item>
+       </ion-list>
+
+       <div id="cool-button-div-right">
+         <ion-button shape="round" (click)="uploaddata()">OK</ion-button>
+       </div>
+
+</ion-content>

@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+      
+    <ion-title>SETTING UP YOUR PROFILE</ion-title>
+
+    
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+        
+
+    <ion-item>
+        <ion-label position="floating">FIRST NAME</ion-label>
+        <ion-input type="text" [(ngModel)]="firstname" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="floating">LAST NAME</ion-label>
+          <ion-input type="text" [(ngModel)]="lastname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">CLASS</ion-label>
+            <ion-input type="number" [(ngModel)]="classval" placeholder="e.g. 9" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">SECTION</ion-label>
+            <ion-input type="text" [(ngModel)]="section" placeholder="e.g. B" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">PHONE NUMBER</ion-label>
+            <ion-input type="number" [(ngModel)]="phoneno" placeholder="918368415678"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating" >ADMISSION NUMBER</ion-label>
+            <ion-input type="number" [(ngModel)]="admno"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">FATHER'S NAME</ion-label>
+            <ion-input type="text" [(ngModel)]="father"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">MOTHER'S NAME</ion-label>
+            <ion-input type="text" [(ngModel)]="mother"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">DATE OF BIRTH</ion-label>
+            <ion-input type="string" placeholder="DD/MM/YYYY"></ion-input>
+          </ion-item>
+
+          <ion-button position="start" fill="solid" expand="block" color="tertiary" (click)="uploaddata()">DONE!</ion-button>
+
+          
+          
+</ion-list>
+</ion-content>

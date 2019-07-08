@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/student"></ion-back-button>
+        </ion-buttons>
+    <ion-title>REGISTER</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        
+
+              <ion-item>
+                  <ion-label position="floating">USERNAME</ion-label>
+                  <ion-input type="text" [(ngModel)]="username"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="floating">PASSWORD</ion-label>
+                    <ion-input type="password" [(ngModel)]="password"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label position="floating">CONFIRM PASSWORD</ion-label>
+                      <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+                    </ion-item>
+
+                    <ion-button position="end" fill="solid" expand="block" color="danger" (click)="register()">REGISTER!</ion-button>
+                    
+       </ion-list>
+</ion-content>

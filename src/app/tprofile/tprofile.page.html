@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar color = "tertiary">
+        
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/codegen"></ion-back-button>
+          </ion-buttons>
+      <ion-title>SETTING UP YOUR PROFILE</ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item> 
+          <ion-label position="floating">NAME</ion-label>
+          <ion-input type="text" [(ngModel)]="name"></ion-input>
+        </ion-item>
+   
+        <ion-item>
+          <ion-label position="floating">GENDER</ion-label>
+          <ion-input type="text" [(ngModel)]="gender"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">SCHOOL/ORGANISATION</ion-label>
+          <ion-input type="text" [(ngModel)]="school"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">CLASSNAME</ion-label>
+            <ion-input type="text" [(ngModel)]="classname"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="floating">SUBJECT</ion-label>
+              <ion-input type="text" [(ngModel)]="subject"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">CONTACT NUMBER</ion-label>
+                <ion-input type="number" [(ngModel)]="contact"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label position="floating">PROFESSIONAL QUALIFICATIONS</ion-label>
+                  <ion-input type="text" [(ngModel)]="qualif"></ion-input>
+                </ion-item>
+
+       </ion-list>
+
+       <div id="cool-button-div-right">
+         <ion-button shape="round" (click)="uploaddata()">OK</ion-button>
+       </div>
+</ion-content>
